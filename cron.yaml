@@ -1,0 +1,5 @@
+cron:
+
+- description: daily session cleanup
+  url: /b/cleanupsessions
+  schedule: every day 3:00
