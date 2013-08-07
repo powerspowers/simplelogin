@@ -56,7 +56,7 @@ class SignupPost(webapp2.RequestHandler):
             # Success
             account = result[1]
             session = get_current_session()
-            session['me'] = account.brighterid
+            session['me'] = account.simpleid
             session['firstName'] = account.firstName
             session['lastName'] = account.lastName
             self.redirect('/')
